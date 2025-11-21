@@ -17,4 +17,5 @@ Permite buscar una ciudad, ver clima actual, pronóstico de 3 días y guarda la 
 - Persistencia con localStorage
 - Diseño responsivo
 
-
+## App en netlify
+- https://glistening-rabanadas-a715c0.netlify.app/
