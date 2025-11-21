@@ -1,0 +1,104 @@
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-image: url(cielo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+    color: rgb(73, 105, 245);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 18px;
+    cursor: pointer;
+    color: rgb(73, 105, 245);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card {
+    background: #f5f5f5a2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.forecast-item {
+    flex: 1;
+    background: #f5f5f5a2;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+    color: red;
+}
+
+@media (max-width: 500px) {
+    .forecast-container {
+        flex-direction: column;
+    }
+}
+
+#personaje {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 360px;
+    height: 360px;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+#personaje img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 400px) {
+    #personaje {
+        width: 130px;
+        height: 130px;
+        bottom: 15px;
+        right: 15px;
+    }
+}

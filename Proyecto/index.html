@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion Del Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="banner">
+        
+        <h1>Aplicacion del clima</h1>
+
+
+
+    </header>
+    <h2>Clima Actual</h2>
+
+    <form id="searchForm">
+    <input id="cityInput" type="text" placeholder="Ingresa una ciudad..." required>
+    <button type="submit">Buscar</button>
+    </form>
+
+
+
+    <p id="error" class="hidden"></p>
+
+    <div id="currentWeather" class="card"></div>
+
+    <h2>Pronóstico de los ultimos 3 dias</h2>
+    <div id="forecast" class="forecast-container"></div>
+
+    <div id="personaje">
+        <img id="personajeImg" src="" alt="Teto del clima">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
